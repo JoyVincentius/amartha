@@ -31,7 +31,6 @@ func ensureTables(db *sql.DB) error {
 	return nil
 }
 
-// Seed contoh loan (gunakan INSERT IGNORE agar tidak duplikat)
 func seedExampleLoan(db *sql.DB) error {
 	_, err := db.Exec(`
         INSERT IGNORE INTO Loans (LoanID, Principal, InterestRate, DurationWeeks) 

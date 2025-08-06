@@ -1,9 +1,9 @@
 package main
 
 type MakePaymentRequest struct {
-	LoanID int     `json:"loan_id"` // ID pinjaman
-	Week   int     `json:"week"`    // minggu ke‑berapa yang dibayar
-	Amount float64 `json:"amount"`  // jumlah pembayaran
+	LoanID int     `json:"loan_id"` 
+	Week   int     `json:"week"`    
+	Amount float64 `json:"amount"`  
 }
 
 type GetOutstandingRequest struct {
@@ -12,7 +12,7 @@ type GetOutstandingRequest struct {
 
 type IsDelinquentRequest struct {
 	LoanID      int `json:"loan_id"`
-	CurrentWeek int `json:"current_week"` // minggu yang sedang dicek
+	CurrentWeek int `json:"current_week"` 
 }
 
 type ApiResponse struct {
