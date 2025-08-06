@@ -1,0 +1,95 @@
+{
+	"info": {
+		"_postman_id": "271b7491-08e2-47aa-9b04-035d99c887be",
+		"name": "Amartha",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43194787",
+		"_collection_link": "https://warped-rocket-534638.postman.co/workspace/My-Workspace~47d4edda-865f-4180-848f-8b87491c111d/collection/43194787-271b7491-08e2-47aa-9b04-035d99c887be?action=share&source=collection_link&creator=43194787"
+	},
+	"item": [
+		{
+			"name": "Create Payment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"loan_id\":100,\"week\":1,\"amount\":110000}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/make-payment",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"make-payment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Outstanding",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"loan_id\":100}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/outstanding",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"outstanding"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delinquent",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"loan_id\":100,\"current_week\":5}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/delinquent",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"delinquent"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

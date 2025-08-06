@@ -22,5 +22,13 @@ This repository contains a simple **Billing Engine** written in Go that manages 
    cd project
 
 2. **Run the project**
-  ```bash
-  go run .
+   ```bash
+   go run .
+
+## Postman Collection
+
+Please import collection to your postman.
+Notes:
+- /make-payment : save payment in week (?)
+- /outstanding : outstanding amount
+- /delinquent : check if delinquent
